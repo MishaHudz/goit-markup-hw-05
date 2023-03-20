@@ -630,10 +630,6 @@ a {
   transform: translateX(-50%) translateY(-50%) scale(0.4);
 }
 
-.close-btn {
-  fill: var(--titel-text-color);
-}
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -652,4 +648,23 @@ a {
   border-radius: 50%;
   background-color: var(--secondary-accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background-color var(--animation-properties),
+    border var(--animation-properties);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--focus-hover-color);
+  border: 1px solid var(--focus-hover-color);
+}
+
+.close-btn {
+  fill: var(--titel-text-color);
+  transition: fill var(--animation-properties);
+}
+
+.modal-btn:hover .close-btn,
+.modal-btn:focus .close-btn {
+  fill: var(--main-white);
 }
