@@ -244,7 +244,7 @@ a {
   border-color: var(--secondary-accent-color);
 
   transition: background-color var(--animation-properties),
-    box-shadow var(--animation-properties);
+    box-shadow var(--animation-properties), color var(--animation-properties);
 }
 
 .btn.primary:hover,
